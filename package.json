@@ -1,0 +1,13 @@
+{
+  "type": "module",
+    "scripts": {
+      "dev": "vercel dev",
+      "deploy": "vercel --prod"
+    },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.5",
+    "@vercel/kv": "^3.0.0",
+    "cheerio": "^1.0.0",
+    "openai": "^4.103.0"
+  }
+}
