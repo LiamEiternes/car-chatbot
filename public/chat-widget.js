@@ -1,4 +1,6 @@
 <script>
+const BASE = "https://car-chatbot-2j8sp49v0-liam-eiternesnos-projects.vercel.app";
+
 (() => {
   const bubble = Object.assign(document.createElement('div'), {
     id:'chat-bubble', innerText:'💬', style:'...fixed styles...'

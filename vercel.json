@@ -1,6 +1,5 @@
 {
-    "crons": [
-      { "path": "/api/cron/updateInventory", "schedule": "*/5 * * * *" }
-    ]
-  }
-  
+  "crons": [
+    { "path": "/api/cron/updateInventory", "schedule": "0 10 * * *" }
+  ]
+}

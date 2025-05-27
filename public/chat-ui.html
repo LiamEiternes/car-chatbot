@@ -10,7 +10,7 @@ ask.onkeydown = e => {
   if (e.key!=='Enter') return;
   const msg = ask.value; ask.value='';
   log.innerHTML += `<p><b>Du:</b> ${msg}</p>`;
-  fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},
+  fetch('https://car-chatbot-2j8sp49v0-liam-eiternesnos-projects.vercel.app/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({ messages:[{role:'user',content:msg}]})})
     .then(r=>r.body.getReader())
     .then(async reader=>{
